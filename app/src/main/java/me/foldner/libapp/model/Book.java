@@ -3,13 +3,14 @@ package me.foldner.libapp.model;
 public class Book {
 
     int id;
-    String img, title, author;
+    String img, title, author, description;
 
-    public Book(int id, String img, String title, String author) {
+    public Book(int id, String img, String title, String author, String description) {
         this.id = id;
         this.img = img;
         this.title = title;
         this.author = author;
+        this.description = description;
     }
 
     public int getId() {
@@ -42,5 +43,13 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

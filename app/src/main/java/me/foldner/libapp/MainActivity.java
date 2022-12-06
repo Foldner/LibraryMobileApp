@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
 //        db.addBook("Гарри Поттер 1", "Джоан Роулинг");
 
         List<Book> bookList = new ArrayList<>();
-        bookList.add(new Book(1, "cover_harry_potter_1", "Гарри Поттер 1", "Джоан Роулинг"));
-        bookList.add(new Book(2, "cover_harry_potter_2", "Гарри Поттер 2", "Джоан Роулинг"));
-        bookList.add(new Book(3, "cover_harry_potter_3", "Гарри Поттер 3", "Джоан Роулинг"));
-        bookList.add(new Book(4, "cover_harry_potter_4", "Гарри Поттер 4", "Джоан Роулинг"));
-        bookList.add(new Book(5, "cover_harry_potter_5", "Гарри Поттер 5", "Джоан Роулинг"));
-        bookList.add(new Book(6, "cover_harry_potter_6", "Гарри Поттер 6", "Джоан Роулинг"));
-        bookList.add(new Book(6, "cover_harry_potter_7", "Гарри Поттер 7", "Джоан Роулинг"));
+        bookList.add(new Book(1, "cover_harry_potter1", "Гарри Поттер 1", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(2, "cover_harry_potter2", "Гарри Поттер 2", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(3, "cover_harry_potter3", "Гарри Поттер 3", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(4, "cover_harry_potter4", "Гарри Поттер 4", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(5, "cover_harry_potter5", "Гарри Поттер 5", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(6, "cover_harry_potter6", "Гарри Поттер 6", "Джоан Роулинг", "Классное описание"));
+        bookList.add(new Book(6, "cover_harry_potter7", "Гарри Поттер 7", "Джоан Роулинг", "Классное описание"));
 
         setBookRecycler(bookList);
     }
