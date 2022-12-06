@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,11 +20,19 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView bookRecycler;
     BookAdapter bookAdapter;
+    ImageButton adminNavigate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        adminNavigate = (ImageButton) findViewById(R.id.adminNavigate3);
+
+        adminNavigate.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, AdminPage.class);
+            startActivity(intent);
+        });
 
         db = new DatabaseHelper(this);
 //        db.addBook("Гарри Поттер 1", "Джоан Роулинг");
